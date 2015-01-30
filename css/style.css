@@ -11,6 +11,9 @@ body {
 
 p {
   font-size: 20px;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 p.small {
@@ -50,6 +53,14 @@ li#facebook-like{
   clear:left;
   font:14px Helvetica,Arial,sans-serif;
 }
+#mc-embedded-subscribe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mc_embed_signup h2{
+  text-align: center;
+}
 #modal-logo{
   display: block;
   margin-left: auto;
@@ -61,8 +72,14 @@ li#facebook-like{
   margin-right: 36%;
   margin-top: 20px;
 }
+#mission-statement{
+  margin-bottom: 5px;
+}
 div#modal-facebook{
   margin-top: 10px
+}
+li#facebook-like{
+  float: right;
 }
 .modal-header{
   text-align: center;
@@ -76,7 +93,12 @@ div#modal-facebook{
 .navbar-toggle{
   margin-top: 29px;
 }
-
+span.glyphicon.glyphicon-ok-sign{
+  color: green;
+}
+span.glyphicon.glyphicon-remove-sign{
+  color: red;
+}
 header {
   text-align: center;
   color: #fff;
@@ -111,7 +133,6 @@ header .intro-text .skills {
     padding-top: 200px;
     padding-bottom: 100px;
   }
-
   header .intro-text .name {
     font-size: 4.75em;
   }
@@ -119,15 +140,16 @@ header .intro-text .skills {
   header .intro-text .skills {
     font-size: 1.75em;
   }
-}
-
-@media(min-width:768px) {
   .navbar-fixed-top {
     -webkit-transition: padding .3s;
     -moz-transition: padding .3s;
     transition: padding .3s;
+}
+@media(max-width:998px) {
+  li#facebook-like{
+    float: left;
   }
-
+}
   .navbar-fixed-top .navbar-brand {
     font-size: 2em;
     -webkit-transition: all .3s;
@@ -172,7 +194,6 @@ div#bs-example-navbar-collapse-1{
 }
 .navbar-header{
   display: inline-block;
-  padding-bottom: 50px;
 }
 a.navbar-brand{
   margin-left: 0px;
@@ -198,18 +219,12 @@ section#tv-commercials{
   color: #fff;
   background: #142e48;
 }
-section#about{
-
-}
 #nav-container{
   padding-left: 5px;
 }
 
 #television-intro{
   padding-bottom: 30px;
-}
-#video-col{
-  margin-top: 50px;
 }
 #store-front-image{
   display: block;
@@ -225,7 +240,20 @@ section#about{
 #reason-images{
   font-size: 5em;
 }
-
+.img-responsive{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+#marine-pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
 @media(max-width:767px) {
   section {
     padding: 75px 0;
@@ -275,7 +303,7 @@ section#about{
 .btn-outline:active,
 .btn-outline.active {
   border: solid 2px #fff;
-  color: #18bc9c;
+  color: #142e48;
   background: #fff;
 }
 
@@ -385,7 +413,7 @@ footer .footer-below {
 }
 
 .scroll-top .btn {
-  width: 50px;
+  width: 57px;
   height: 50px;
   border-radius: 100%;
   font-size: 20px;
@@ -395,67 +423,6 @@ footer .footer-below {
 .scroll-top .btn:focus {
   outline: 0;
 }
-
-.portfolio-modal .modal-content {
-  padding: 100px 0;
-  min-height: 100%;
-  border: 0;
-  border-radius: 0;
-  text-align: center;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.portfolio-modal .modal-content h2 {
-  margin: 0;
-  font-size: 3em;
-}
-
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content .item-details {
-  margin: 30px 0;
-}
-
-.portfolio-modal .close-modal {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.portfolio-modal .close-modal:hover {
-  opacity: .3;
-}
-
-.portfolio-modal .close-modal .lr {
-  z-index: 1051;
-  width: 1px;
-  height: 75px;
-  margin-left: 35px;
-  background-color: #2c3e50;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.portfolio-modal .close-modal .lr .rl {
-  z-index: 1052;
-  width: 1px;
-  height: 75px;
-  background-color: #2c3e50;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.portfolio-modal .modal-backdrop {
-  display: none;
-  opacity: 0;
+span.glyphicon.glyphicon-menu-up{
+  font-size: 30px;
 }

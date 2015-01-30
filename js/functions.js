@@ -21,9 +21,12 @@ $('.navbar-collapse ul li a').click(function() {
 
 //Popup Jquery function
 $(document).ready(function() {
+  setTimeout(function(){
   $('#mailchimp-button').click()
+},1000);
 });
 
+$('body').scrollspy({ target: '.navbar' })
 //Using jQuery for Facebook SDK
 /*
 $(document).ready(function() {
