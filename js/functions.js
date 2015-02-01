@@ -27,18 +27,6 @@ $(document).ready(function() {
 });
 //ScrollSpy Javascript function for navbar
 $('body').scrollspy({ target: '.navbar' })
-//Hides and shows the scroll-top button based on the mouse location
-//makes it unavailable until past the intro section
-$( "body" ).mousemove(function( event ) {
-  var mouse_y = event.pageY;
-  if(mouse_y < 500){
-
-    $('#scroll-button').removeClass('scroll-top page-scroll visible-xs visble-sm');
-  }
-  else
-  $('#scroll-button').addClass('scroll-top page-scroll visible-xs visble-sm');
-
-});
 
 //Using jQuery for Facebook SDK
 /*
