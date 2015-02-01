@@ -39,6 +39,9 @@ h6 {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
 }
+.btn{
+  white-space: normal;
+}
 div#address-telephone{
   padding-top: 50px;
 }
