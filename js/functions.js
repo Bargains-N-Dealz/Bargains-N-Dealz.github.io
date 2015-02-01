@@ -33,10 +33,10 @@ $( "body" ).mousemove(function( event ) {
   var y = event.pageY;
   if(y < 500){
 
-    $('#scroll_1').removeClass('scroll-top page-scroll visible-xs visble-sm');
+    $('#scroll-button').removeClass('scroll-top page-scroll visible-xs visble-sm');
   }
   else
-  $('#scroll_1').addClass('scroll-top page-scroll visible-xs visble-sm');
+  $('#scroll-button').addClass('scroll-top page-scroll visible-xs visble-sm');
 
 });
 //Using jQuery for Facebook SDK
