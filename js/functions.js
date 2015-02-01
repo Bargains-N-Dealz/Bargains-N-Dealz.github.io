@@ -39,6 +39,16 @@ $( "body" ).mousemove(function( event ) {
   $('#scroll-button').addClass('scroll-top page-scroll visible-xs visble-sm');
 
 });
+
+$( "body" ).on( "swipe", function( event ) {
+  if(y < 500){
+
+    $('#scroll_1').removeClass('scroll-top page-scroll visible-xs visble-sm');
+  }
+  else
+  $('#scroll_1').addClass('scroll-top page-scroll visible-xs visble-sm');
+
+});
 //Using jQuery for Facebook SDK
 /*
 $(document).ready(function() {
