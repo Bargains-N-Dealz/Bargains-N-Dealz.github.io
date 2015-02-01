@@ -30,8 +30,8 @@ $('body').scrollspy({ target: '.navbar' })
 //Hides and shows the scroll-top button based on the mouse location
 //makes it unavailable until past the intro section
 $( "body" ).mousemove(function( event ) {
-  var y = event.pageY;
-  if(y < 500){
+  var mouse_y = event.pageY;
+  if(mouse_y < 500){
 
     $('#scroll-button').removeClass('scroll-top page-scroll visible-xs visble-sm');
   }
@@ -41,7 +41,8 @@ $( "body" ).mousemove(function( event ) {
 });
 
 $( "body" ).on( "swipe", function( event ) {
-  if(y < 500){
+  var swipe_y = event.pageY;
+  if(swipe_y < 500){
 
     $('#scroll_1').removeClass('scroll-top page-scroll visible-xs visble-sm');
   }
