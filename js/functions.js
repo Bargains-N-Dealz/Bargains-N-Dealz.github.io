@@ -40,16 +40,6 @@ $( "body" ).mousemove(function( event ) {
 
 });
 
-$( "body" ).on( "swipe", function( event ) {
-  var swipe_y = event.pageY;
-  if(swipe_y < 500){
-
-    $('#scroll_1').removeClass('scroll-top page-scroll visible-xs visble-sm');
-  }
-  else
-  $('#scroll_1').addClass('scroll-top page-scroll visible-xs visble-sm');
-
-});
 //Using jQuery for Facebook SDK
 /*
 $(document).ready(function() {
