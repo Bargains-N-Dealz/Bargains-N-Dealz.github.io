@@ -28,7 +28,7 @@ $(document).ready(function() {
 //ScrollSpy Javascript function for navbar
 $('body').scrollspy({ target: '.navbar' })
 
-$(document).on('touchstart mousemove', 'body', function(event){
+$(document).on('touchmove mousemove', 'body', function(event){
   event.stopPropagation();
   if(event.handled !== true) {
 
