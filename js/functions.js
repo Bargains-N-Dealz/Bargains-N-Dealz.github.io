@@ -26,7 +26,9 @@ $(document).ready(function() {
 },1000);
 });
 //ScrollSpy Javascript function for navbar
+$(document).ready(function() {
 $('body').scrollspy({ target: '.navbar' })
+});
 
 $( "body" ).bind( 'vmousedown vmousemove', function( event ) {
   var swipe_y = event.pageY;
