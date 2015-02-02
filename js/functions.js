@@ -28,6 +28,25 @@ $(document).ready(function() {
 //ScrollSpy Javascript function for navbar
 $('body').scrollspy({ target: '.navbar' })
 
+$(document).on('touchstart mousemove', 'body', function(event){
+  event.stopPropagation();
+  event.preventDefault();
+  if(event.handled !== true) {
+
+    var y = event.pageY;
+    if(y < 500){
+
+      $('#scroll_1').removeClass('scroll-top page-scroll visible-xs visble-sm');
+    }
+    else
+    $('#scroll_1').addClass('scroll-top page-scroll visible-xs visble-sm');
+
+
+    event.handled = true;
+  } else {
+    return false;
+  }
+});
 //Using jQuery for Facebook SDK
 /*
 $(document).ready(function() {

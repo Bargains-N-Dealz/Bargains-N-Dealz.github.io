@@ -429,3 +429,6 @@ footer .footer-below {
 span.glyphicon.glyphicon-menu-up{
   font-size: 30px;
 }
+.ui-loader.ui-corner-all.ui-body-a.ui-loader-default{
+  display: none;
+}
