@@ -30,7 +30,6 @@ $('body').scrollspy({ target: '.navbar' })
 
 $(document).on('touchstart mousemove', 'body', function(event){
   event.stopPropagation();
-  event.preventDefault();
   if(event.handled !== true) {
 
     var y = event.pageY;
