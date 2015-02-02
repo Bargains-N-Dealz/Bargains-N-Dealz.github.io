@@ -28,43 +28,13 @@ $(document).ready(function() {
 //ScrollSpy Javascript function for navbar
 $('body').scrollspy({ target: '.navbar' })
 
-$(document).bind('touchmove mousemove', 'body', function(event){
-  event.stopPropagation();
-  if(event.handled !== true) {
+$( "body" ).on( 'vmousemove', function( event ) {
+  var swipe_y = event.pageY;
+  if(swipe_y < 500){
 
-    var y = event.pageY;
-    if(y < 500){
-
-      $('#scroll-button').removeClass('scroll-top page-scroll visible-xs visble-sm');
-    }
-    else
-    $('#scroll-button').addClass('scroll-top page-scroll visible-xs visble-sm');
-
-
-    event.handled = true;
-  } else {
-    return false;
+    $('#scroll_1').removeClass('scroll-top page-scroll visible-xs visble-sm');
   }
-});
-//Using jQuery for Facebook SDK
-/*
-$(document).ready(function() {
-  $.ajaxSetup({ cache: true });
-  $.getScript('//connect.facebook.net/en_UK/all.js', function(){
-    FB.init({
-      appId: '340608769461615',
-    });
-    $('#loginbutton,#feedbutton').removeAttr('disabled');
-    FB.getLoginStatus(updateStatusCallback);
-  });
+  else
+  $('#scroll_1').addClass('scroll-top page-scroll visible-xs visble-sm');
 
-  FB.Event.subscribe('edge.create', page_like_or_unlike_callback);
-  FB.Event.subscribe('edge.remove', page_like_or_unlike_callback);
 });
-
-var page_like_or_unlike_callback = function(url, html_element) {
-  console.log("page_like_or_unlike_callback");
-  console.log(url);
-  console.log(html_element);
-}
-*/
