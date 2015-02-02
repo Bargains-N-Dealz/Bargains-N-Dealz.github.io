@@ -28,7 +28,7 @@ $(document).ready(function() {
 //ScrollSpy Javascript function for navbar
 $('body').scrollspy({ target: '.navbar' })
 
-$( "body" ).on( 'vmousemove', function( event ) {
+$( "body" ).bind( 'vmousedown vmousemove', function( event ) {
   var swipe_y = event.pageY;
   if(swipe_y < 500){
 
