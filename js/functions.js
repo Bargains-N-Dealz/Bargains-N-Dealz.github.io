@@ -30,13 +30,12 @@ $(document).ready(function() {
 $('body').scrollspy({ target: '.navbar' })
 });
 
-$( "body" ).bind( 'vmousedown vmousemove', function( event ) {
-  var swipe_y = event.pageY;
-  if(swipe_y < 500){
-
-    $('#scroll_1').removeClass('scroll-top page-scroll visible-xs visble-sm');
-  }
-  else
-  $('#scroll_1').addClass('scroll-top page-scroll visible-xs visble-sm');
-
+$(document).ready(function() {
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 200) {
+      $('.scroll-top').attr('style','display:block !important');
+    } else {
+      $('.scroll-top').attr('style','display:none !important');
+    }
+  });
 });
