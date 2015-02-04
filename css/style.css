@@ -84,6 +84,11 @@ div#modal-facebook{
 li#facebook-like{
   float: right;
 }
+a#mailchimp-button{
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 24px;
+}
 .modal-header{
   text-align: center;
 }
