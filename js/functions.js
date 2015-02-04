@@ -32,7 +32,7 @@ $('body').scrollspy({ target: '.navbar' })
 
 $(document).ready(function() {
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 500) {
       $('.scroll-top').attr('style','display:block !important');
     } else {
       $('.scroll-top').attr('style','display:none !important');
