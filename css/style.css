@@ -51,6 +51,9 @@ div#address-telephone{
 li#facebook-like{
   padding-top: 14px;
 }
+li span{
+  padding-left: 5px;
+}
 #mc_embed_signup{
   background:#fff;
   clear:left;
