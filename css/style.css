@@ -34,7 +34,7 @@ a:focus,
 a:active,
 a.active {
   outline: 0;
-  color: #142e48;
+  color: rgb(253, 253, 253);
 }
 
 h1,
