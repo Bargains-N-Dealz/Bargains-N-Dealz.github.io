@@ -99,7 +99,7 @@ li span{
 div#modal-facebook{
   margin-top: 10px
 }
-div#coupon-row{
+.coupon-row{
   padding-top: 10px;
 }
 a#mailchimp-button{
@@ -259,7 +259,7 @@ section#location{
 #television-intro{
   padding-bottom: 30px;
 }
-#coupon-row img{
+.coupon-row img{
   opacity: 0.7;
   filter: alpha(opacity=40); /* For IE8 and earlier */
   max-width: 100%;
