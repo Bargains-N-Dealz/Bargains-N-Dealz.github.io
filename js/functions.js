@@ -40,7 +40,7 @@ $(document).ready(function() {
   });
 });
 
-$("#coupon-row .col-md-4 img").hover(function(){
+$(".coupon-row .col-md-4 img").hover(function(){
   $(this).stop(true, true).animate({ opacity: "1.0", height: "100%", width: "100%"}, "slow");
   $(this).css('position', 'relative');
 }, function() {
