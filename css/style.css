@@ -271,8 +271,8 @@ section#location{
 #three-reasons{
   padding-top: 15px;
 }
-#reason-images{
-  font-size: 5em;
+.reason-images{
+  font-size: 4em;
 }
 .img-responsive{
   display: block;
@@ -287,6 +287,16 @@ section#location{
   margin-right: auto;
   max-height: 100%;
   max-width: 100%;
+}
+iframe{
+  width: 400px;
+  height: 250px;
+  frameborder: 0px;
+  border: 0px;
+}
+.commercial-videos{
+  width: 360px;
+  height: 115px;
 }
 @media(max-width:767px) {
   section {
