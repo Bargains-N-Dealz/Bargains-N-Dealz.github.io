@@ -174,8 +174,7 @@ $( "ul.nav.nav-pills a" ).click(function() {
                                             default:
                                               console.log("Could not display JSON images!");
                                             }
-                                            couponMove();
-                                            couponClick();
+                                            checkDevice();
                                           });
                                         });
 
