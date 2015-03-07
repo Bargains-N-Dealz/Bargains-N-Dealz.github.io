@@ -6,7 +6,7 @@ $(document).ready(function() {
   var y;
   switch (day) {
     case 0:
-      if ((hour > 9) && (hour < 19)){
+      if ((hour > 10) && (hour < 19)){
         y = "<span style=\"color:#07ed11\"><span class='glyphicon glyphicon-ok-sign'></span> Open</span>";
         $('#open-close7').html(y)
       }
