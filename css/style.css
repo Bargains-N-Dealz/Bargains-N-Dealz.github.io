@@ -502,3 +502,22 @@ span.redirect {
 .ui-loader.ui-corner-all.ui-body-a.ui-loader-default{
   display: none;
 }
+
+/* Disclaimer Page Style */
+#Disclaimer-list li{
+  list-style: none;
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+}
+#Disclaimer-list li span{
+  padding-right: 15px;
+  font-size: 25px;
+}
+ul#Disclaimer-list{
+  margin-bottom: 50px;
+}
+.disclaimer-body{
+  background: #142e48;
+  color: white;
+}
