@@ -302,6 +302,16 @@ section#location{
   max-height: 100%;
   max-width: 100%;
 }
+#header-image{
+  max-width: 90%;
+}
+#store-front-image{
+  max-width: 70%;
+}
+@media(max-width:767px) {
+  #store-front-image{
+  max-width: 100%;
+}
 #marine-pic{
   display: block;
   margin-left: auto;
